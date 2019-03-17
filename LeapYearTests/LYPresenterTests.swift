@@ -38,6 +38,12 @@ class LYPresenterTests: XCTestCase {
         
         lyPresenter.enteredYear = "1900"
         XCTAssertFalse(lyPresenter.isLeapYear())
+        
+        lyPresenter.enteredYear = "2012"
+        XCTAssertTrue(lyPresenter.isLeapYear())
+        
+        lyPresenter.enteredYear = "2019"
+        XCTAssertFalse(lyPresenter.isLeapYear())
     }
     
 }

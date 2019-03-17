@@ -34,7 +34,7 @@ class LYPresenter {
      */
     func isLeapYear() -> Bool {
         let year = Int(enteredYear)!
-        let result = (year % LYConstants.fourHundred == 0)
+        let result = (year % LYConstants.fourHundred == 0) || ((year % LYConstants.four == 0) && (year % LYConstants.hundred != 0))
         return result
     }
     
