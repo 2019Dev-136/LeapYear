@@ -13,7 +13,6 @@ class LYPresenter {
     
     /**
      Method name: validateUserInput
-     Parameters:  string. user entered Year
      Output    :  True or False
      Description : If user entered data is valid, returns true else false
      */
