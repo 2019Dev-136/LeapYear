@@ -14,3 +14,11 @@ struct LYConstants {
     static let fourHundred = 400
     static let allowedCharacter = CharacterSet(charactersIn: "1234567890")
 }
+
+struct LYConstantMessages{
+    static let oKText = "OK"
+    static let alertTitle = "Message"
+    static let leapYear = "It is a leap year."
+    static let notLeapYear = "It is not a leap year."
+    static let invalidEntry = "Please provide valid entry."
+}
