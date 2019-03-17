@@ -10,9 +10,9 @@ import XCTest
 @testable import LeapYear
 
 class LYPresenterTests: XCTestCase {
+    let lyPresenter = LYPresenter()
     
     func testValidateUserInput(){
-        let lyPresenter = LYPresenter()
         lyPresenter.enteredYear = ""
         XCTAssertFalse(lyPresenter.validateUserInput())
         
@@ -30,6 +30,14 @@ class LYPresenterTests: XCTestCase {
 
         lyPresenter.enteredYear = "4351"
         XCTAssertTrue(lyPresenter.validateUserInput())
+    }
+    
+    func testIsLeapYear(){
+        lyPresenter.enteredYear = "2000"
+        XCTAssertTrue(lyPresenter.isLeapYear())
+        
+        lyPresenter.enteredYear = "1900"
+        XCTAssertFalse(lyPresenter.isLeapYear())
     }
     
 }

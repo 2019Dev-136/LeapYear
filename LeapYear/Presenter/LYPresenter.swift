@@ -10,6 +10,7 @@ import Foundation
 
 class LYPresenter {
     var enteredYear: String!
+    
     /**
      Method name: validateUserInput
      Parameters:  string. user entered Year
@@ -26,5 +27,15 @@ class LYPresenter {
         return false
     }
     
+    /**
+     Method name: isLeapYear
+     Output    :  True or False
+     Description : If user entered year is leap, returns true else false
+     */
+    func isLeapYear() -> Bool {
+        let year = Int(enteredYear)!
+        let result = (year % LYConstants.fourHundred == 0)
+        return result
+    }
     
 }
