@@ -18,11 +18,12 @@ class LYPresenter {
      */
     func validateUserInput(string: String) -> Bool {
         if((!string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) &&
-            (string.count <= LYConstants.four) &&
+            (string.count == LYConstants.four) &&
             Int(string) != nil &&
             string.rangeOfCharacter(from: LYConstants.allowedCharacter) != nil) {
             return true
         }
         return false
     }
+    
 }

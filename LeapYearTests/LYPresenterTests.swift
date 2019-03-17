@@ -14,6 +14,7 @@ class LYPresenterTests: XCTestCase {
     func testValidateUserInput(){
         let lyPresenter = LYPresenter()
         XCTAssertFalse(lyPresenter.validateUserInput(string: ""))
+        XCTAssertFalse(lyPresenter.validateUserInput(string: "546"))
         XCTAssertFalse(lyPresenter.validateUserInput(string: "21213"))
         XCTAssertFalse(lyPresenter.validateUserInput(string: "abjsa"))
         XCTAssertFalse(lyPresenter.validateUserInput(string: "4bj2"))
