@@ -13,12 +13,23 @@ class LYPresenterTests: XCTestCase {
     
     func testValidateUserInput(){
         let lyPresenter = LYPresenter()
-        XCTAssertFalse(lyPresenter.validateUserInput(string: ""))
-        XCTAssertFalse(lyPresenter.validateUserInput(string: "546"))
-        XCTAssertFalse(lyPresenter.validateUserInput(string: "21213"))
-        XCTAssertFalse(lyPresenter.validateUserInput(string: "abjsa"))
-        XCTAssertFalse(lyPresenter.validateUserInput(string: "4bj2"))
-        XCTAssertTrue(lyPresenter.validateUserInput(string: "2314"))
+        lyPresenter.enteredYear = ""
+        XCTAssertFalse(lyPresenter.validateUserInput())
+        
+        lyPresenter.enteredYear = "546"
+        XCTAssertFalse(lyPresenter.validateUserInput())
+        
+        lyPresenter.enteredYear = "21213"
+        XCTAssertFalse(lyPresenter.validateUserInput())
+        
+        lyPresenter.enteredYear = "abjsa"
+        XCTAssertFalse(lyPresenter.validateUserInput())
+        
+        lyPresenter.enteredYear = "4bj2"
+        XCTAssertFalse(lyPresenter.validateUserInput())
+
+        lyPresenter.enteredYear = "4351"
+        XCTAssertTrue(lyPresenter.validateUserInput())
     }
     
 }
