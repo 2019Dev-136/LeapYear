@@ -10,8 +10,16 @@ import UIKit
 
 class LYMainViewController: UIViewController {
 
+    @IBOutlet weak var yearTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func find_Clicked(_ sender: Any) {
+        
+    }
+    
 }
+
 

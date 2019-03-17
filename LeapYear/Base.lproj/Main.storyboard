@@ -71,7 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="yearField" destination="Uh0-ke-qUa" id="fHD-W7-gmS"/>
+                        <outlet property="yearTextField" destination="Uh0-ke-qUa" id="Dm7-cx-Jh7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
