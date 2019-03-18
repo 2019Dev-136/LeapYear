@@ -9,16 +9,17 @@
 import Foundation
 
 struct LYConstants {
-    static let four = 4
-    static let hundred = 100
-    static let fourHundred = 400
-    static let allowedCharacter = CharacterSet(charactersIn: "1234567890")
+    static let zero         = 0
+    static let four         = 4
+    static let hundred      = 100
+    static let fourHundred  = 400
+    static let minYear      = 1582
 }
 
 struct LYConstantMessages{
-    static let oKText = "OK"
-    static let alertTitle = "Message"
-    static let leapYear = "It is a leap year."
-    static let notLeapYear = "It is not a leap year."
+    static let oKText       = "OK"
+    static let alertTitle   = "Message"
+    static let leapYear     = "It is a leap year."
+    static let notLeapYear  = "It is not a leap year."
     static let invalidEntry = "Please provide valid entry."
 }
