@@ -16,19 +16,22 @@ class LYPresenterTests: XCTestCase {
         lyPresenter.enteredYear = ""
         XCTAssertFalse(lyPresenter.validateUserInput())
         
-        lyPresenter.enteredYear = "546"
-        XCTAssertFalse(lyPresenter.validateUserInput())
-        
         lyPresenter.enteredYear = "21213"
         XCTAssertFalse(lyPresenter.validateUserInput())
         
-        lyPresenter.enteredYear = "abjsa"
+        lyPresenter.enteredYear = "43 56"
         XCTAssertFalse(lyPresenter.validateUserInput())
         
         lyPresenter.enteredYear = "4bj2"
         XCTAssertFalse(lyPresenter.validateUserInput())
 
-        lyPresenter.enteredYear = "4351"
+        lyPresenter.enteredYear = "0200"
+        XCTAssertFalse(lyPresenter.validateUserInput())
+        
+        lyPresenter.enteredYear = "  2100  "
+        XCTAssertTrue(lyPresenter.validateUserInput())
+        
+        lyPresenter.enteredYear = "2100"
         XCTAssertTrue(lyPresenter.validateUserInput())
     }
     
