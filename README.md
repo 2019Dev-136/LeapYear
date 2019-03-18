@@ -6,3 +6,7 @@ If the provided data is not valid, it displays message to enter valid data other
 
 # Pre-requisite
 Xcode
+
+# Steps to execute
+1. Enter data in text field
+2. Click on “Find” button. 
