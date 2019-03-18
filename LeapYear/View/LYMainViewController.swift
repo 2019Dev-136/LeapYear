@@ -18,7 +18,7 @@ class LYMainViewController: UIViewController {
     }
     
     @IBAction func find_Clicked(_ sender: Any) {
-        presenter.enteredYear = yearTextField.text!       
+        presenter.enteredYear = yearTextField.text
         if presenter.validateUserInput() {
             let isLeapYear = presenter.isLeapYear()
             isLeapYear ? displayAlert(title: LYConstantMessages.alertTitle, message: LYConstantMessages.leapYear) : displayAlert(title: LYConstantMessages.alertTitle, message: LYConstantMessages.notLeapYear)
