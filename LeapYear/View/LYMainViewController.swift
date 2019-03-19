@@ -25,7 +25,6 @@ class LYMainViewController: UIViewController {
         }
         else {
             displayAlert(title: LYConstantMessages.alertTitle, message: LYConstantMessages.invalidEntry)
-            return
         }
     }
     
